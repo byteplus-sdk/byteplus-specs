@@ -1,0 +1,33 @@
+{
+    "name": "BytePlusRTC",
+    "version": "3.46.101",
+    "summary": "BytePlusRTC is an realtime communication SDK of IOS.",
+    "homepage": "https://github.com/volcengine/VolcEngineRTC",
+    "license": {
+        "type": "Copyright",
+        "text": "BytePlus copyright"
+    },
+    "authors": {
+        "bytertc": "bytertc@bytedance.com"
+    },
+    "source": {
+        "http": "https://lf16-bpsdk.bytepluscdn.com/obj/byteplussdk-sg/BytePlusRTC/3.46.101/BytePlusRTC.zip"
+    },
+    "platforms": {
+        "ios": "9.0"
+    },
+    "default_subspecs": [
+        "Core"
+    ],
+    "subspecs": [
+        {
+            "name": "Core",
+            "vendored_frameworks": "BytePlusRTC.xcframework"
+        },
+        {
+            "name": "ScreenCapture",
+            "vendored_frameworks": "BytePlusRTCScreenCapturer.xcframework"
+        }
+    ],
+    "repoId": "25909"
+}
