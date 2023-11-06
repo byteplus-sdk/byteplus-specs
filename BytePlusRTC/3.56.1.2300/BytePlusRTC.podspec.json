@@ -1,0 +1,42 @@
+{
+    "name": "BytePlusRTC",
+    "version": "3.56.1.2300",
+    "summary": "BytePlusRTC is an realtime communication SDK of IOS.",
+    "homepage": "https://www.byteplus.com/en/product/rtc",
+    "license": {
+        "type": "Copyright",
+        "text": "BytePlus copyright"
+    },
+    "authors": {
+        "byteplusrtc": "byteplusrtc@byteplus.com"
+    },
+    "source": {
+        "http": "https://lf16-bpsdk.bytepluscdn.com/obj/byteplussdk-sg/BytePlusRTC/3.56.1.2300/BytePlusRTC.zip"
+    },
+    "platforms": {
+        "ios": "11.0"
+    },
+    "default_subspecs": [
+        "Core",
+        "RTCFFmpeg"
+    ],
+    "subspecs": [
+        {
+            "name": "Core",
+            "vendored_frameworks": "BytePlusRTC.xcframework"
+        },
+        {
+            "name": "ScreenCapture",
+            "vendored_frameworks": "BytePlusRTCScreenCapturer.xcframework"
+        },
+        {
+            "name": "RTCFFmpeg",
+            "vendored_frameworks": "RTCFFmpeg.xcframework"
+        },
+        {
+            "name": "ByteRTCFFmpegAudioExtension",
+            "vendored_frameworks": "ByteRTCFFmpegAudioExtension.xcframework"
+        }
+    ],
+    "repoId": "25909"
+}
