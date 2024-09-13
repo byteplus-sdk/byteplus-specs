@@ -1,0 +1,52 @@
+{
+    "name": "OnePlayer",
+    "version": "1.0.0-alpha.0-static",
+    "summary": "A multimedia player SDK",
+    "description": "A multimedia player SDK which provides comprehensive, stable, and smooth live streaming and video playback services.",
+    "homepage": "https://www.byteplus.com/en/product/videoone",
+    "license": {
+        "type": "Copyright",
+        "text": "BytePlus copyright"
+    },
+    "authors": {
+        "zhuxi.1206": "zhuxi.1206@bytedance.com"
+    },
+    "source": {
+        "http": "https://lf16-bpsdk.bytepluscdn.com/obj/byteplussdk-sg/OnePlayer/1.0.0-alpha.0-static/OnePlayer_swift5_1_3_framework.tar.xz"
+    },
+    "platforms": {
+        "ios": "12.0"
+    },
+    "prefix_header_file": false,
+    "frameworks": [
+        "UIKit",
+        "ImageIO",
+        "CoreVideo",
+        "CoreImage",
+        "CoreGraphics"
+    ],
+    "pod_target_xcconfig": {
+        "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+    },
+    "dependencies": {
+        "TTSDK/LivePull": [
+            "1.42.300.4-premium"
+        ],
+        "TTSDK/Player": [
+            "1.42.300.4-premium"
+        ]
+    },
+    "repoId": "45637",
+    "ios": {
+        "frameworks": [
+            "UIKit",
+            "ImageIO",
+            "CoreVideo",
+            "CoreImage",
+            "CoreGraphics",
+            "Foundation",
+            "JavaScriptCore"
+        ],
+        "vendored_frameworks": "binaries/ios/OnePlayer.xcframework"
+    }
+}
