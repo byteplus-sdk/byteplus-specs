@@ -1,0 +1,55 @@
+{
+    "name": "BytePlusRTC",
+    "version": "3.58.1.31100",
+    "summary": "BytePlusRTC is an realtime communication SDK of IOS.",
+    "homepage": "https://www.byteplus.com/en/product/rtc",
+    "license": {
+        "type": "Copyright",
+        "text": "BytePlus copyright"
+    },
+    "authors": {
+        "byteplusrtc": "byteplusrtc@byteplus.com"
+    },
+    "source": {
+        "http": "https://lf16-bpsdk.bytepluscdn.com/obj/byteplussdk-sg/BytePlusRTC/3.58.1.31100/BytePlusRTC.zip"
+    },
+    "platforms": {
+        "ios": "11.0"
+    },
+    "default_subspecs": [
+        "Core",
+        "RealXBase",
+        "RTCFFmpeg"
+    ],
+    "subspecs": [
+        {
+            "name": "Core",
+            "vendored_frameworks": "BytePlusRTC.xcframework"
+        },
+        {
+            "name": "ScreenCapture",
+            "vendored_frameworks": "BytePlusRTCScreenCapturer.xcframework"
+        },
+        {
+            "name": "RTCFFmpeg",
+            "vendored_frameworks": "RTCFFmpeg.xcframework"
+        },
+        {
+            "name": "ByteRTCFFmpegAudioExtension",
+            "vendored_frameworks": "ByteRTCFFmpegAudioExtension.xcframework"
+        },
+        {
+            "name": "RealX",
+            "vendored_frameworks": "RealX.xcframework"
+        },
+        {
+            "name": "RealXBase",
+            "vendored_frameworks": "RealXBase.xcframework"
+        },
+        {
+            "name": "ByteRTCVp8CodecExtension",
+            "vendored_frameworks": "ByteRTCVp8CodecExtension.xcframework"
+        }
+    ],
+    "repoId": "25909"
+}
