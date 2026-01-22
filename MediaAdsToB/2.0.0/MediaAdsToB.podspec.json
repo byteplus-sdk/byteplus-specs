@@ -1,0 +1,103 @@
+{
+    "name": "MediaAdsToB",
+    "version": "2.0.0",
+    "summary": "A short description of MediaAds.",
+    "description": "TODO: Add long description of the pod here.",
+    "homepage": "https://github.com/volcengine/MediaAdsToB",
+    "license": {
+        "type": "Copyright",
+        "text": "BytePlus copyright"
+    },
+    "authors": {
+        "zhangyuanshu": "zhangyuanshu@bytedance.com"
+    },
+    "source": {
+        "http": "https://lf16-bpsdk.bytepluscdn.com/obj/byteplussdk-sg/MediaAdsToB/2.0.0/MediaAdsToB.framework.tar.xz"
+    },
+    "platforms": {
+        "ios": "12.0"
+    },
+    "static_framework": true,
+    "subspecs": [
+        {
+            "name": "Core",
+            "source_files": [
+                "MediaAds/MediaAds/Classes/AdsSession/**/*",
+                "MediaAds/MediaAds/Classes/Utils/**/*",
+                "MediaAdsToB-bitdummy.m"
+            ],
+            "dependencies": {
+                "GoogleAds-IMA-iOS-SDK": [
+                    "~> 3.26.1"
+                ],
+                "MediaAdsToB/Cache": [],
+                "MediaAdsToB/PreLoad": []
+            },
+            "ios": {
+                "vendored_libraries": "ios-arch-iphone/*_Core_*awesome_*.a"
+            },
+            "preserve_paths": [
+                "**/*.bwp"
+            ]
+        },
+        {
+            "name": "Cache",
+            "source_files": [
+                "MediaAds/MediaAds/Classes/Cache/**/*",
+                "MediaAdsToB-bitdummy.m"
+            ],
+            "ios": {
+                "vendored_libraries": "ios-arch-iphone/*_Cache_*awesome_*.a"
+            },
+            "preserve_paths": [
+                "**/*.bwp"
+            ]
+        },
+        {
+            "name": "PreLoad",
+            "source_files": [
+                "MediaAds/MediaAds/Classes/PreLoad/**/*",
+                "MediaAdsToB-bitdummy.m"
+            ],
+            "ios": {
+                "vendored_libraries": "ios-arch-iphone/*_PreLoad_*awesome_*.a"
+            },
+            "preserve_paths": [
+                "**/*.bwp"
+            ]
+        },
+        {
+            "name": "PlayerWrapper",
+            "source_files": [
+                "MediaAds/MediaAds/Classes/ContentPlayer/**/*",
+                "MediaAdsToB-bitdummy.m"
+            ],
+            "dependencies": {
+                "TTSDKFramework/Player": [],
+                "TTSDKFramework/LivePull": []
+            },
+            "ios": {
+                "vendored_libraries": "ios-arch-iphone/*_PlayerWrapper_*awesome_*.a"
+            },
+            "preserve_paths": [
+                "**/*.bwp"
+            ]
+        }
+    ],
+    "repoId": "51259",
+    "ios": {
+        "frameworks": [
+            "UIKit",
+            "Foundation",
+            "JavaScriptCore"
+        ],
+        "vendored_libraries": "ios-arch-iphone/*_MediaAdsToB_*awesome_*.a"
+    },
+    "source_files": [
+        "MediaAdsToB-bitdummy.m"
+    ],
+    "prepare_command": "",
+    "preserve_paths": [
+        "**/*.bwp"
+    ]
+}
