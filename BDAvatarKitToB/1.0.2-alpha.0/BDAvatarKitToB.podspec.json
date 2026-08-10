@@ -1,0 +1,50 @@
+{
+    "name": "BDAvatarKitToB",
+    "version": "1.0.2-alpha.0",
+    "summary": "ByteDance Avatar SDK",
+    "description": "Avatar SDK provided as dynamic xcframework",
+    "homepage": "https://github.com/zyqhi/BDAvatarKit",
+    "license": {
+        "type": "Copyright",
+        "text": "BytePlus copyright"
+    },
+    "authors": {
+        "zyqhi": "zhouyongqiang@bytedance.com"
+    },
+    "source": {
+        "http": "https://lf16-bpsdk.bytepluscdn.com/obj/byteplussdk-sg/BDAvatarKitToB/1.0.2-alpha.0/BDAvatarKitToB_swift5_1_3_framework.tar.xz"
+    },
+    "platforms": {
+        "ios": "12.0"
+    },
+    "frameworks": [
+        "CFNetwork",
+        "CoreServices",
+        "Security",
+        "SystemConfiguration",
+        "UIKit",
+        "Foundation"
+    ],
+    "pod_target_xcconfig": {
+        "ENABLE_BITCODE": "NO"
+    },
+    "dependencies": {
+        "SocketRocket": [],
+        "BytePlusRTC/Core": [],
+        "BytePlusRTC/RealXBase": [],
+        "BytePlusRTC/RTCFFmpeg": []
+    },
+    "vendored_frameworks": "BDAvatarKitToB_BytePlus/BDAvatarKit.xcframework",
+    "repoId": "56635",
+    "ios": {
+        "frameworks": [
+            "CFNetwork",
+            "CoreServices",
+            "Security",
+            "SystemConfiguration",
+            "UIKit",
+            "Foundation",
+            "JavaScriptCore"
+        ]
+    }
+}
