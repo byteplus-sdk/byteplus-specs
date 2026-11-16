@@ -1,0 +1,30 @@
+{
+    "name": "TTNetworkManager",
+    "version": "4.2.210.21",
+    "summary": "iOS client network sdk",
+    "description": "Network SDK for iOS",
+    "homepage": "https://github.com/volcengine/volcengine-specs",
+    "license": {
+        "type": "Copyright",
+        "text": "BytePlus copyright"
+    },
+    "authors": {
+        "dongyangfan": "dongyangfan@bytedance.com"
+    },
+    "source": {
+        "http": "https://lf16-bpsdk.bytepluscdn.com/obj/byteplussdk-sg/TTNetworkManager/4.2.210.21/TTNetworkManager.zip"
+    },
+    "platforms": {
+        "ios": "10.0"
+    },
+    "requires_arc": true,
+    "ios": {
+        "frameworks": [
+            "WebKit",
+            "JavaScriptCore"
+        ]
+    },
+    "libraries": "c++",
+    "vendored_frameworks": "TTNetworkManager/TTNetworkManager.xcframework",
+    "preserve_paths": "TTNetworkManager/TTNetworkManager.xcframework"
+}
